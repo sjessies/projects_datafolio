@@ -103,6 +103,9 @@ header nav ul li .dropbtn:hover {
     text-decoration: none;
     border-radius: 5px;
     display: inline-block;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
 }
 
 .btn:hover {
@@ -123,29 +126,54 @@ section {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 /* Estructura "Acerca de mí" */
+/* Columna Izquierda */
 .column-left {
-    width: 30%;
+    flex: 1;
+    min-width: 280px;
+    max-width: 35%;
     text-align: center;
 }
 
-.column-right {
-    width: 70%;
-}
-
-/* Imagen de Perfil */
 .profile-img {
     border-radius: 50%;
     max-width: 150px;
     margin-bottom: 20px;
 }
 
-/* Listas */
+/* Columna Derecha */
+.column-right {
+    flex: 2;
+    min-width: 280px;
+    max-width: 60%;
+}
+
+.column-right h2 {
+    color: #34495E;
+    margin-bottom: 15px;
+}
+
+.column-right p,
+.column-right ul {
+    color: #2C3E50;
+    margin-bottom: 20px;
+}
+
+.column-right ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+/* Listas y Enlaces */
 ul {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 ul li {
@@ -155,6 +183,8 @@ ul li {
 ul li a {
     color: #1ABC9C;
     text-decoration: none;
+    display: flex;
+    align-items: center;
 }
 
 ul li a:hover {
@@ -237,6 +267,72 @@ ul li a:hover {
     padding: 5px 10px;
     border-radius: 5px;
     font-size: 14px;
+}
+
+/* Formulario de Contacto */
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.contact-form button.btn {
+    background-color: #1ABC9C;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.contact-form button.btn:hover {
+    background-color: #16A085;
+}
+
+/* Información de Contacto */
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-info p {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #34495E;
+}
+
+.contact-info a {
+    display: flex;
+    align-items: center;
+    color: #34495E;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.contact-info a i {
+    margin-right: 10px;
 }
 
 /* Footer */
