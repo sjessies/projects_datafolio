@@ -22,6 +22,7 @@ h1 {
 
 h2 {
     font-size: 28px;
+    margin-bottom: 20px; /* Añadido para separación con el contenido */
 }
 
 h3 {
@@ -49,69 +50,23 @@ header nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
-}
-
-header nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-header nav ul li a {
-    color: #FFFFFF;
-    text-decoration: none;
-}
-
-/* Botones de llamada a la acción */
-.btn {
-    background-color: #1ABC9C; /* Verde azulado */
-    color: #FFFFFF;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-.btn:hover {
-    background-color: #16A085; /* Un poco más oscuro en hover */
-}
-
-/* Secciones principales */
-main {
-    padding: 20px;
-}
-
-section {
-    margin-bottom: 20px;
-}
-
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #34495E;
-    color: #FFFFFF;
-}
-
-/* Estilos para el menú desplegable */
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
     display: flex;
     justify-content: center;
 }
 
-nav ul li {
+header nav ul li {
     position: relative;
 }
 
-nav ul li a {
+header nav ul li a {
     display: block;
     padding: 10px 20px;
     color: #FFFFFF;
     text-decoration: none;
 }
 
-nav ul li a:hover,
-nav ul li .dropbtn:hover {
+header nav ul li a:hover,
+header nav ul li .dropbtn:hover {
     background-color: #1ABC9C; /* Cambia el color en hover */
 }
 
@@ -138,4 +93,157 @@ nav ul li .dropbtn:hover {
 
 .dropdown:hover .dropdown-content {
     display: block;
+}
+
+/* Botones de llamada a la acción */
+.btn {
+    background-color: #1ABC9C; /* Verde azulado */
+    color: #FFFFFF;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.btn:hover {
+    background-color: #16A085; /* Un poco más oscuro en hover */
+}
+
+/* Secciones principales */
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+/* Contenedor Principal */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estructura "Acerca de mí" */
+.column-left {
+    width: 30%;
+    text-align: center;
+}
+
+.column-right {
+    width: 70%;
+}
+
+/* Imagen de Perfil */
+.profile-img {
+    border-radius: 50%;
+    max-width: 150px;
+    margin-bottom: 20px;
+}
+
+/* Listas */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+ul li a {
+    color: #1ABC9C;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Cuadrícula de Habilidades */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.skill-card {
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.skill-card img.skill-icon {
+    max-width: 100px;
+    margin-bottom: 15px;
+}
+
+.skill-card h2 {
+    color: #34495E;
+    margin-bottom: 15px;
+}
+
+.skill-card p {
+    color: #2C3E50;
+    font-size: 16px;
+}
+
+/* Cuadrícula de Proyectos */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.project-card {
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.project-card img.project-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.project-card h2 {
+    color: #34495E;
+    margin-bottom: 15px;
+}
+
+.project-card p {
+    color: #2C3E50;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.project-card .keywords {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.project-card .keywords span {
+    background-color: #1ABC9C;
+    color: #FFFFFF;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #34495E;
+    color: #FFFFFF;
+    margin-top: 20px;
 }

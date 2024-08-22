@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acerca de mí - [Tu Nombre]</title>
+    <link rel="stylesheet" href="assets/css/styles.css"> <!-- Verifica que esta ruta sea correcta -->
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="about.html">Acerca de mí</a></li>
+                <li><a href="projects.html">Proyectos</a></li>
+                <li><a href="skills.html">Habilidades</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Otras Plataformas</a>
+                    <div class="dropdown-content">
+                        <a href="https://github.com/tu_usuario" target="_blank">
+                            <i data-feather="github"></i> GitHub
+                        </a>
+                        <a href="https://medium.com/@tu_usuario" target="_blank">
+                            <i data-feather="edit-3"></i> Blog
+                        </a>
+                        <a href="https://www.instagram.com/tu_usuario" target="_blank">
+                            <i data-feather="instagram"></i> Instagram
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container"> <!-- Asegúrate de que esta clase esté definida en el CSS -->
+        <div class="column-left">
+            <img src="assets/img/profile.jpg" alt="[Tu Nombre]" class="profile-img">
+            <h2>[Tu Nombre]</h2>
+            <p>Data Scientist | Analista de Datos</p>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/tu_usuario" target="_blank">LinkedIn</a></li>
+                <li><a href="https://github.com/tu_usuario" target="_blank">GitHub</a></li>
+            </ul>
+        </div>
+        <div class="column-right">
+            <h2>Biografía</h2>
+            <p>[Tu biografía profesional concisa, destacando experiencia y áreas de especialización]</p>
+            <h2>Formación Académica</h2>
+            <p>M.S. en Ciencia de Datos, [Nombre de la Universidad], [Año de Graduación]</p>
+            <p>B.A. en [Tu carrera], [Nombre de la Universidad], [Año de Graduación]</p>
+            <p>Certificaciones: [Nombre de la Certificación], [Institución], [Año]</p>
+            <h2>Habilidades Técnicas</h2>
+            <p>Lenguajes de Programación: Python, R, SQL</p>
+            <p>Herramientas y Frameworks: Pandas, NumPy, TensorFlow</p>
+            <p>Herramientas de Visualización: Tableau, Power BI</p>
+            <h2>Intereses Profesionales</h2>
+            <p>[Describe tus áreas de interés en ciencia de datos, como inteligencia artificial, visualización de datos, etc.]</p>
+            <h2>Habilidades Blandas</h2>
+            <p>[Trabajo en equipo, comunicación efectiva, resolución de problemas, etc.]</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 [Tu Nombre]. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+        feather.replace()
+    </script>
+</body>
+</html>
