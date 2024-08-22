@@ -1,0 +1,141 @@
+/* Tipografía */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Mono&family=Open+Sans:wght@400;600&family=Roboto:wght@700&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #F7F9F9; /* Fondo general gris muy claro */
+    color: #2C3E50; /* Texto principal en negro suave */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Títulos y Subtítulos */
+h1, h2, h3 {
+    font-family: 'Roboto', sans-serif;
+    color: #34495E; /* Gris azulado oscuro */
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+/* Código o datos */
+code {
+    font-family: 'Fira Mono', monospace;
+    background-color: #F7F9F9;
+    padding: 2px 4px;
+    border-radius: 4px;
+    color: #2C3E50;
+}
+
+/* Navegación */
+header {
+    background-color: #34495E;
+    color: #FFFFFF;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+/* Botones de llamada a la acción */
+.btn {
+    background-color: #1ABC9C; /* Verde azulado */
+    color: #FFFFFF;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #16A085; /* Un poco más oscuro en hover */
+}
+
+/* Secciones principales */
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #34495E;
+    color: #FFFFFF;
+}
+
+/* Estilos para el menú desplegable */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    display: block;
+    padding: 10px 20px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+nav ul li a:hover,
+nav ul li .dropbtn:hover {
+    background-color: #1ABC9C; /* Cambia el color en hover */
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #34495E;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #1ABC9C;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
