@@ -1,345 +1,395 @@
 /* Tipografía */
-@import url('https://fonts.googleapis.com/css2?family=Fira+Mono&family=Open+Sans:wght@400;600&family=Roboto:wght@700&display=swap');
-
 body {
     font-family: 'Open Sans', sans-serif;
-    background-color: #F7F9F9; /* Fondo general gris muy claro */
-    color: #2C3E50; /* Texto principal en negro suave */
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
+    background-color: #F7F9F9; /* Fondo gris muy claro */
+    color: #2C3E50; /* Negro suave para la legibilidad del texto */
 }
 
-/* Títulos y Subtítulos */
-h1, h2, h3 {
+h1, h2, h3, h4, h5, h6 {
     font-family: 'Roboto', sans-serif;
-    color: #34495E; /* Gris azulado oscuro */
+    color: #34495E; /* Gris azulado oscuro para títulos */
 }
 
-h1 {
-    font-size: 36px;
-}
-
-h2 {
-    font-size: 28px;
-    margin-bottom: 20px; /* Añadido para separación con el contenido */
-}
-
-h3 {
-    font-size: 24px;
-}
-
-/* Código o datos */
-code {
+code, pre {
     font-family: 'Fira Mono', monospace;
-    background-color: #F7F9F9;
-    padding: 2px 4px;
-    border-radius: 4px;
-    color: #2C3E50;
 }
 
-/* Navegación */
-header {
-    background-color: #34495E;
-    color: #FFFFFF;
-    padding: 10px 0;
-    text-align: center;
+/* Navbar */
+.navbar {
+    background-color: #34495E; /* Color principal */
 }
 
-header nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
+.navbar-brand, .nav-link {
+    color: #FFFFFF; /* Blanco para el texto */
 }
 
-header nav ul li {
-    position: relative;
+.navbar-nav .nav-link {
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 18px; /* Tamaño de fuente para las opciones de navegación */
 }
 
-header nav ul li a {
-    display: block;
-    padding: 10px 20px;
-    color: #FFFFFF;
-    text-decoration: none;
+.form-select {
+    background-color: #1ABC9C; /* Color de acento */
+    color: #FFFFFF; /* Blanco para el texto del selector de idioma */
+    border: none; /* Sin borde */
+    margin-left: 15px;
 }
 
-header nav ul li a:hover,
-header nav ul li .dropbtn:hover {
-    background-color: #1ABC9C; /* Cambia el color en hover */
+/* Contenido principal */
+.container h1 {
+    font-size: 36px; /* Tamaño para títulos principales */
 }
 
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #34495E;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-.dropdown-content a {
-    color: white;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-}
-
-.dropdown-content a:hover {
-    background-color: #1ABC9C;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
+.container p {
+    font-size: 18px; /* Tamaño para el cuerpo del texto */
 }
 
 /* Botones de llamada a la acción */
-.btn {
-    background-color: #1ABC9C; /* Verde azulado */
-    color: #FFFFFF;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    display: inline-block;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
+.btn-primary {
+    background-color: #1ABC9C; /* Color de acento */
+    border-color: #1ABC9C; /* Borde en el color de acento */
 }
 
-.btn:hover {
-    background-color: #16A085; /* Un poco más oscuro en hover */
+.btn-primary:hover {
+    background-color: #16A085; /* Un tono más oscuro al pasar el ratón */
+    border-color: #16A085;
 }
 
-/* Secciones principales */
-main {
-    padding: 20px;
+/* Tarjetas de proyectos */
+.card {
+    background-color: #FFFFFF; /* Fondo blanco para las tarjetas */
+    border: 1px solid #DDDDDD; /* Borde sutil */
 }
 
-section {
-    margin-bottom: 20px;
+.card-title {
+    color: #34495E; /* Títulos en el color principal */
 }
 
-/* Contenedor Principal */
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+.card-text {
+    color: #2C3E50; /* Texto en negro suave */
 }
 
-/* Estructura "Acerca de mí" */
-/* Columna Izquierda */
-.column-left {
-    flex: 1;
-    min-width: 280px;
-    max-width: 35%;
-    text-align: center;
+.badge.bg-success {
+    background-color: #1ABC9C; /* Verde azulado para las etiquetas */
 }
 
-.profile-img {
-    border-radius: 50%;
-    max-width: 150px;
-    margin-bottom: 20px;
-}
-
-/* Columna Derecha */
-.column-right {
-    flex: 2;
-    min-width: 280px;
-    max-width: 60%;
-}
-
-.column-right h2 {
-    color: #34495E;
-    margin-bottom: 15px;
-}
-
-.column-right p,
-.column-right ul {
-    color: #2C3E50;
-    margin-bottom: 20px;
-}
-
-.column-right ul {
-    list-style-type: disc;
-    padding-left: 20px;
-}
-
-/* Listas y Enlaces */
-ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-ul li {
-    margin-bottom: 10px;
-}
-
-ul li a {
-    color: #1ABC9C;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-}
-
-ul li a:hover {
-    text-decoration: underline;
-}
-
-/* Cuadrícula de Habilidades */
-.skills-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-}
-
-.skill-card {
-    background-color: #FFFFFF;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-.skill-card img.skill-icon {
-    max-width: 100px;
-    margin-bottom: 15px;
-}
-
-.skill-card h2 {
-    color: #34495E;
-    margin-bottom: 15px;
-}
-
-.skill-card p {
-    color: #2C3E50;
-    font-size: 16px;
-}
-
-/* Cuadrícula de Proyectos */
-.projects-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-}
-
-.project-card {
-    background-color: #FFFFFF;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-.project-card img.project-img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 15px;
-}
-
-.project-card h2 {
-    color: #34495E;
-    margin-bottom: 15px;
-}
-
-.project-card p {
-    color: #2C3E50;
-    font-size: 16px;
-    margin-bottom: 15px;
-}
-
-.project-card .keywords {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    flex-wrap: wrap;
-}
-
-.project-card .keywords span {
-    background-color: #1ABC9C;
-    color: #FFFFFF;
-    padding: 5px 10px;
-    border-radius: 5px;
-    font-size: 14px;
-}
-
-/* Formulario de Contacto */
-.contact-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 40px;
-}
-
-.contact-form form {
-    display: flex;
-    flex-direction: column;
-}
-
-.contact-form label {
-    margin-bottom: 10px;
-    font-weight: 600;
-}
-
-.contact-form input,
-.contact-form textarea {
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
-}
-
-.contact-form button.btn {
-    background-color: #1ABC9C;
-    color: #FFFFFF;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-}
-
-.contact-form button.btn:hover {
-    background-color: #16A085;
-}
-
-/* Información de Contacto */
-.contact-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.contact-info p {
-    margin: 10px 0;
-    font-size: 18px;
-    color: #34495E;
-}
-
-.contact-info a {
-    display: flex;
-    align-items: center;
-    color: #34495E;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 18px;
-}
-
-.contact-info a i {
-    margin-right: 10px;
-}
-
-/* Footer */
+/* Pie de página */
 footer {
+    background-color: #34495E; /* Color principal */
+    color: #FFFFFF; /* Texto en blanco */
+    padding: 20px 0;
     text-align: center;
-    padding: 20px;
-    background-color: #34495E;
+}
+
+footer a {
     color: #FFFFFF;
-    margin-top: 20px;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #1ABC9C; /* Color de acento al pasar el ratón */
+}
+
+footer p {
+    margin: 0;
+    font-size: 16px; /* Tamaño de texto ajustado para mayor legibilidad */
+}
+
+/* Sección Intro */
+.intro {
+    background-color: #F7F9F9; /* Fondo gris muy claro */
+    padding: 60px 0; /* Espaciado superior e inferior */
+}
+
+.intro h1 {
+    font-size: 36px; /* Tamaño del título principal */
+    margin-bottom: 20px; /* Espacio debajo del título */
+    color: #34495E; /* Gris azulado oscuro */
+}
+
+.intro p {
+    font-size: 18px; /* Tamaño del cuerpo de texto */
+    color: #2C3E50; /* Negro suave para el texto */
+    margin-bottom: 20px; /* Espacio debajo del texto */
+}
+
+.intro .btn-primary {
+    background-color: #1ABC9C; /* Color de acento para el botón */
+    border-color: #1ABC9C;
+    font-size: 16px; /* Tamaño de fuente del botón */
+    padding: 10px 20px; /* Espaciado interno del botón */
+    text-transform: uppercase; /* Texto en mayúsculas para el botón */
+}
+
+.intro .btn-primary:hover {
+    background-color: #16A085; /* Un tono más oscuro al pasar el ratón */
+    border-color: #16A085;
+}
+
+/* Sección Proyectos */
+.proyectos {
+    background-color: #F7F9F9; /* Fondo gris muy claro */
+}
+
+.proyectos h2 {
+    font-size: 32px; /* Tamaño del título de la sección */
+    color: #34495E; /* Gris azulado oscuro */
+    margin-bottom: 20px; /* Espacio debajo del título */
+}
+
+.proyectos p {
+    font-size: 18px; /* Tamaño del texto */
+    color: #2C3E50; /* Negro suave */
+    margin-bottom: 40px; /* Espacio debajo del texto */
+}
+
+.card-title {
+    color: #34495E; /* Gris azulado oscuro para los títulos de las tarjetas */
+}
+
+.card-text {
+    color: #2C3E50; /* Negro suave para el texto de las tarjetas */
+}
+
+.badge.bg-success {
+    background-color: #1ABC9C; /* Verde azulado para las etiquetas */
+}
+
+.btn-primary {
+    background-color: #1ABC9C; /* Color de acento */
+    border-color: #1ABC9C;
+}
+
+.btn-primary:hover {
+    background-color: #16A085; /* Un tono más oscuro al pasar el ratón */
+    border-color: #16A085;
+}
+
+/* Sección Contacto y Redes Sociales */
+.contacto {
+    background-color: #F7F9F9; /* Fondo gris muy claro */
+}
+
+.contacto h2 {
+    font-size: 32px; /* Tamaño del título */
+    color: #34495E; /* Gris azulado oscuro */
+    margin-bottom: 20px; /* Espacio debajo del título */
+}
+
+.contacto p {
+    font-size: 18px; /* Tamaño del texto */
+    color: #2C3E50; /* Negro suave */
+    margin-bottom: 40px; /* Espacio debajo del texto */
+}
+
+.contacto a {
+    color: #1ABC9C; /* Color de acento para los íconos */
+    transition: color 0.3s ease;
+}
+
+.contacto a:hover {
+    color: #16A085; /* Un tono más oscuro al pasar el ratón */
+}
+
+/* Sección Acerca de Mí */
+.about {
+    background-color: #F7F9F9; /* Fondo gris muy claro */
+    padding: 60px 0; /* Espaciado superior e inferior */
+}
+
+.about h1 {
+    font-size: 36px; /* Tamaño del título principal */
+    color: #34495E; /* Gris azulado oscuro */
+    margin-bottom: 20px; /* Espacio debajo del título */
+}
+
+.about p {
+    font-size: 18px; /* Tamaño del cuerpo de texto */
+    color: #2C3E50; /* Negro suave para el texto */
+    margin-bottom: 20px; /* Espacio debajo del texto */
+}
+
+.about .img-fluid {
+    border: 5px solid #1ABC9C; /* Borde verde azulado alrededor de la imagen */
+}
+
+/* Estilo para el logo */
+.logo-img {
+    max-height: 40px; /* Ajusta el tamaño según lo que necesites */
+    width: auto;
+}
+
+/* Estilo para las redes sociales en la página Acerca de mí */
+.social-links a {
+    color: #1ABC9C; /* Verde azulado */
+    text-decoration: none;
+    font-size: 18px; /* Tamaño de fuente adecuado */
+}
+
+.social-links a:hover {
+    color: #16A085; /* Un tono más oscuro al pasar el ratón */
+}
+
+.social-links i {
+    margin-right: 8px; /* Espaciado entre el ícono y el texto */
+}
+
+.social-links p {
+    margin: 10px 0; /* Espaciado entre los enlaces de redes sociales */
+}
+
+.about h2 {
+    color: #34495E; /* Color para el nombre */
+    margin-top: 20px; /* Espaciado superior */
+}
+
+.about h3 {
+    margin-top: 30px;
+    color: #34495E;
+}
+
+.about ul {
+    list-style-type: disc;
+    padding-left: 20px; /* Alineación de las listas */
+}
+
+.about p {
+    font-size: 18px; /* Tamaño del cuerpo de texto */
+    color: #2C3E50; /* Negro suave para el texto */
+    margin-bottom: 20px; /* Espaciado debajo del texto */
+}
+
+/* Sección Habilidades */
+.skills {
+    background-color: #F7F9F9; /* Fondo gris muy claro */
+}
+
+.skills h2 {
+    font-size: 32px; /* Tamaño del título de la sección */
+    color: #34495E; /* Gris azulado oscuro */
+    margin-bottom: 20px; /* Espacio debajo del título */
+}
+
+.skills p {
+    font-size: 18px; /* Tamaño del texto */
+    color: #2C3E50; /* Negro suave */
+    margin-bottom: 40px; /* Espacio debajo del texto */
+}
+
+.card-title {
+    color: #34495E; /* Gris azulado oscuro para los títulos de las tarjetas */
+    font-size: 24px; /* Tamaño del título de la tarjeta */
+    margin-bottom: 15px; /* Espaciado debajo del título */
+}
+
+.card-text {
+    color: #2C3E50; /* Negro suave para el texto de las tarjetas */
+    font-size: 16px; /* Tamaño del cuerpo de texto */
+}
+
+.card img {
+    margin-bottom: 15px; /* Espaciado debajo de la imagen */
+}
+
+/* Sección Proyectos */
+.projects {
+    background-color: #F7F9F9; /* Fondo gris muy claro */
+}
+
+.projects h2 {
+    font-size: 32px; /* Tamaño del título de la sección */
+    color: #34495E; /* Gris azulado oscuro */
+    margin-bottom: 20px; /* Espacio debajo del título */
+}
+
+.projects p {
+    font-size: 18px; /* Tamaño del texto */
+    color: #2C3E50; /* Negro suave */
+    margin-bottom: 40px; /* Espacio debajo del texto */
+}
+
+.card-title {
+    color: #34495E; /* Gris azulado oscuro para los títulos de las tarjetas */
+    font-size: 24px; /* Tamaño del título de la tarjeta */
+    margin-bottom: 15px; /* Espaciado debajo del título */
+}
+
+.card-text {
+    color: #2C3E50; /* Negro suave para el texto de las tarjetas */
+    font-size: 16px; /* Tamaño del cuerpo de texto */
+}
+
+.badge.bg-success {
+    background-color: #1ABC9C; /* Verde azulado para las etiquetas */
+    font-size: 14px; /* Tamaño de la fuente para las etiquetas */
+}
+
+.card img {
+    margin-bottom: 15px; /* Espaciado debajo de la imagen */
+}
+
+/* Sección Contacto */
+.contact {
+    background-color: #F7F9F9; /* Fondo gris muy claro */
+}
+
+.contact h2 {
+    font-size: 32px; /* Tamaño del título de la sección */
+    color: #34495E; /* Gris azulado oscuro */
+    margin-bottom: 20px; /* Espacio debajo del título */
+}
+
+.contact .form-label {
+    color: #34495E; /* Gris azulado oscuro para los labels */
+}
+
+.contact .form-control {
+    border-radius: 4px;
+    border: 1px solid #DDDDDD; /* Borde sutil */
+}
+
+.contact .btn-primary {
+    background-color: #1ABC9C; /* Color de acento */
+    border-color: #1ABC9C;
+    font-size: 16px;
+}
+
+.contact .btn-primary:hover {
+    background-color: #16A085; /* Un tono más oscuro al pasar el ratón */
+    border-color: #16A085;
+}
+
+.contact .col-md-6 h4 {
+    font-size: 24px;
+    color: #34495E; /* Gris azulado oscuro para los títulos */
+}
+
+.contact p {
+    font-size: 18px; /* Tamaño del texto */
+    color: #2C3E50; /* Negro suave */
+}
+
+.contact a {
+    color: #1ABC9C; /* Verde azulado */
+    text-decoration: none;
+}
+
+.contact a:hover {
+    color: #16A085; /* Un tono más oscuro al pasar el ratón */
+}
+
+.contact i {
+    margin-right: 8px; /* Espaciado entre el ícono y el texto */
+}
+
+/* Asegurar que el contenido principal ocupe la altura completa */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    min-height: calc(100vh - 160px); /* Altura mínima para asegurar que el footer quede al final */
 }

@@ -3,86 +3,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Acerca de mí - [Tu Nombre]</title>
+    <title>Acerca de Mí</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="stylesheet" href="https://unpkg.com/feather-icons/dist/feather.css"> <!-- Feather Icons -->
+    <!-- Fuentes de Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;600&family=Fira+Mono:wght@400&display=swap" rel="stylesheet">
+    <!-- Iconos de Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="about.html">Acerca de mí</a></li>
-                <li><a href="projects.html">Proyectos</a></li>
-                <li><a href="skills.html">Habilidades</a></li>
-                <li><a href="contact.html">Contacto</a></li>
-                <li class="dropdown">
-                    <a href="#" class="dropbtn">Otras Plataformas</a>
-                    <div class="dropdown-content">
-                        <a href="https://github.com/tu_usuario" target="_blank">
-                            <i data-feather="github"></i> GitHub
-                        </a>
-                        <a href="https://medium.com/@tu_usuario" target="_blank">
-                            <i data-feather="edit-3"></i> Blog
-                        </a>
-                        <a href="https://www.instagram.com/tu_usuario" target="_blank">
-                            <i data-feather="instagram"></i> Instagram
-                        </a>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <!-- Logo (Imagen) -->
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/img/logo.png" alt="Logo" class="logo-img">
+            </a>
+
+            <!-- Botón del menú hamburguesa -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Opciones de Navegación -->
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="about.html">Acerca de mí</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="skills.html">Habilidades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="projects.html">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Selector de Idioma -->
+            <div class="d-flex justify-content-end">
+                <select class="form-select form-select-sm" aria-label="Selector de idioma">
+                    <option selected>ES</option>
+                    <option value="en">EN</option>
+                </select>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenido Principal -->
+    <main class="about py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Columna Izquierda: Foto de perfil y redes sociales -->
+                <div class="col-md-4 text-center">
+                    <img src="assets/img/profile.jpg" alt="Foto de Perfil" class="img-fluid rounded-circle mb-4" style="max-width: 150px;">
+                    <h2>[Tu Nombre]</h2>
+                    <p>Data Scientist | Analista de Datos | [Otra área de especialización]</p>
+                    <div class="social-links">
+                        <p>
+                            <a href="https://www.linkedin.com/in/tuusuario" target="_blank"><i class="fab fa-linkedin fa-lg"></i> LinkedIn</a>
+                        </p>
+                        <p>
+                            <a href="https://github.com/tuusuario" target="_blank"><i class="fab fa-github fa-lg"></i> GitHub</a>
+                        </p>
+                        <p>
+                            <a href="https://www.instagram.com/tuusuario" target="_blank"><i class="fab fa-instagram fa-lg"></i> Instagram</a>
+                        </p>
                     </div>
-                </li>
-            </ul>
-        </nav>
-    </header>
+                </div>
 
-    <main>
-        <section id="about" class="container">
-            <div class="column-left">
-                <img src="assets/img/tu_foto.jpg" alt="[Tu Nombre]" class="profile-img">
-                <h1>[Tu Nombre]</h1>
-                <p>Data Scientist | Analista de Datos | [Otra área de especialización]</p>
-                <ul>
-                    <li><a href="https://www.linkedin.com/in/tu_usuario" target="_blank"><i data-feather="linkedin"></i> LinkedIn</a></li>
-                    <li><a href="https://github.com/tu_usuario" target="_blank"><i data-feather="github"></i> GitHub</a></li>
-                    <li><a href="https://www.instagram.com/tu_usuario" target="_blank"><i data-feather="instagram"></i> Instagram</a></li>
-                </ul>
+                <!-- Columna Derecha: Información de perfil -->
+                <div class="col-md-8">
+                    <h3>Biografía</h3>
+                    <p>[Tu biografía profesional concisa, destacando experiencia y áreas de especialización]</p>
+                    
+                    <h3>Formación Académica</h3>
+                    <ul>
+                        <li>M.S. en Ciencia de Datos, [Nombre de la Universidad], [Año de Graduación]</li>
+                        <li>B.A. en [Tu carrera], [Nombre de la Universidad], [Año de Graduación]</li>
+                        <li>Certificaciones: [Nombre de la Certificación], [Institución], [Año]</li>
+                    </ul>
+
+                    <h3>Habilidades Técnicas</h3>
+                    <ul>
+                        <li>Lenguajes de Programación: Python, R, SQL</li>
+                        <li>Herramientas y Frameworks: Pandas, NumPy, TensorFlow</li>
+                        <li>Herramientas de Visualización: Tableau, Power BI</li>
+                        <li>Conocimientos en: Estadística, Machine Learning</li>
+                    </ul>
+
+                    <h3>Intereses Profesionales</h3>
+                    <p>[Describe tus áreas de interés en ciencia de datos, como inteligencia artificial, visualización de datos, etc.]</p>
+
+                    <h3>Habilidades Blandas</h3>
+                    <p>[Trabajo en equipo, comunicación efectiva, resolución de problemas, etc.]</p>
+                </div>
             </div>
-
-            <div class="column-right">
-                <h2>Biografía</h2>
-                <p>[Tu biografía profesional concisa, destacando experiencia y áreas de especialización]</p>
-
-                <h2>Formación Académica</h2>
-                <ul>
-                    <li>M.S. en Ciencia de Datos, [Nombre de la Universidad], [Año de Graduación]</li>
-                    <li>B.A. en [Tu carrera], [Nombre de la Universidad], [Año de Graduación]</li>
-                    <li>Certificaciones: [Nombre de la Certificación], [Institución], [Año]</li>
-                </ul>
-
-                <h2>Habilidades Técnicas</h2>
-                <ul>
-                    <li>Lenguajes de Programación: Python, R, SQL</li>
-                    <li>Herramientas y Frameworks: Pandas, NumPy, TensorFlow</li>
-                    <li>Herramientas de Visualización: Tableau, Power BI</li>
-                    <li>Conocimientos en: Estadística, Machine Learning</li>
-                </ul>
-
-                <h2>Intereses Profesionales</h2>
-                <p>[Describe tus áreas de interés en ciencia de datos, como inteligencia artificial, visualización de datos, etc.]</p>
-
-                <h2>Habilidades Blandas</h2>
-                <p>[Trabajo en equipo, comunicación efectiva, resolución de problemas, etc.]</p>
-            </div>
-        </section>
+        </div>
     </main>
 
-    <footer>
-        <p>&copy; 2024 [Tu Nombre]. Todos los derechos reservados.</p>
+    <!-- Footer -->
+    <footer class="py-4 bg-dark text-white text-center">
+        <div class="container">
+            <p class="mb-0">&copy; 2024 Mi Portafolio. Todos los derechos reservados.</p>
+            <p class="mb-0">Desarrollado por [Tu Nombre].</p>
+        </div>
     </footer>
 
-    <!-- Feather Icons -->
-    <script src="https://unpkg.com/feather-icons"></script>
-    <script>
-        feather.replace()
-    </script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
