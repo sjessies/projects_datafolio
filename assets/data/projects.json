@@ -1,0 +1,26 @@
+[
+    {
+        "title": "Proyecto 1",
+        "description": "Descripción breve del proyecto 1.",
+        "image": "assets/img/project1.jpg",
+        "link": "project1.html",
+        "date": "2024-08-01",
+        "keywords": ["Pandas", "NumPy", "Scikit-learn"]
+    },
+    {
+        "title": "Proyecto 2",
+        "description": "Descripción breve del proyecto 2.",
+        "image": "assets/img/project2.jpg",
+        "link": "project2.html",
+        "date": "2024-07-15",
+        "keywords": ["TensorFlow", "Keras", "OpenCV"]
+    },
+    {
+        "title": "Proyecto 3",
+        "description": "Descripción breve del proyecto 3.",
+        "image": "assets/img/project3.jpg",
+        "link": "project3.html",
+        "date": "2024-06-30",
+        "keywords": ["React", "Node.js", "D3.js"]
+    }
+]
